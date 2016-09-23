@@ -137,7 +137,7 @@ def is_shared(vm):
     """ Simple filter for returning true or false if a virtual machine
     has shared for disklayout
     """
-    return 'shared' == vm.info['disk_template']
+    return 'sharedfile' == vm.info['disk_template']
 
 
 @register.filter
